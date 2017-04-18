@@ -1,0 +1,24 @@
+<div id="homeDiv">
+  <div id="userInput">
+    <form class="regNumForm" action="/regNumInput" method="post">
+      <input id="regNumInput" type="text" name="regNumInput" placeholder="Enter Registration Number">
+      <input id="submitButton" type="submit" name="regNumSubmit" value="Submit">
+
+      <div id="locationRadioButtons">
+        <input type="radio" name="locationRadioButton" value="CK"><p class="location">Malmesbury</p>
+        <input type="radio" name="locationRadioButton" value="CY"><p class="location">Bellville</p>
+        <input type="radio" name="locationRadioButton" value="CA"><p class="location">Cape Town</p>
+        <input type="radio" name="locationRadioButton" value="ALL"><p class="location">All</p>
+        <input id="filterButton" type="submit" name="filterSubmit" value="Filter">
+      </div>
+    </form>
+  </div>
+  <p id="regNumListHead"> Your Registration Number List <p>
+  <div id="userOutput">
+    <p>{{error}}</p>
+      {{#regNumList}}
+      <li class="mainRegNumList">{{this}}</li>
+      {{/regNumList}}
+  </div>
+  <p><a href="/history">History</a></p>
+</div>

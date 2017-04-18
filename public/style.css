@@ -1,0 +1,58 @@
+body {
+  text-align: center;
+  font-family: Roboto;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: rgb(254, 219, 40);
+  margin: 0em 0em 1em 0em;
+  padding: 1em 0em 1em 0em;
+  border-bottom: solid black thick;
+  border-top: solid black thick;
+  font-size: 3em;
+}
+
+li {
+  list-style: none;
+}
+
+#regNumListHead {
+  padding: 0.5em 0em 0.5em 0em;
+  background-color: black;
+  color: rgb(254, 219, 40);
+  /* border: solid black thick; */
+  font-size: 3em;
+}
+
+.mainRegNumList {
+  background-color: rgb(254, 219, 40);
+  border: solid black thick;
+  font-size: 3em;
+  padding: 0em 0em 0em 0em;
+  margin: 0.3em 10em 0em 10em;
+  border-radius: 0.3em;
+}
+
+#locationRadioButtons {
+  display: -webkit-box;
+  margin: 2em 28em 1em 27em;
+  padding: 1em 0em 0em 2em;
+  background-color: rgb(254, 219, 40);
+  border: solid black thin;
+}
+
+#filterButton {
+  margin: 0.5em 0em 0em 1em;
+}
+
+#regNumInput {
+  padding: 1em 4em 1em 4em;
+  margin: 0em 1em 0em 0em;
+}
+
+#userOutput {
+  list-style: none;
+}
