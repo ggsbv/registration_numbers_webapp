@@ -109,6 +109,10 @@ app.post("/regNumInput", function(req, res){
       data = {regNumList : regNumsToDisplay};
     };
   } else if (filterButton){
+    if(radioSelected === undefined){
+      radioSelected = 'ALL';
+    }
+    console.log(radioSelected);
     //filterList function will filter and return a list containing all
     //registration numbers which satisfy the condition of the radio button
     //that was chosen
