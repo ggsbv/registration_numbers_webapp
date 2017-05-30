@@ -16,7 +16,7 @@ const filterList = require("./filterList");
 var app = express();
 
 //connect to MongoDB
-mongoose.connect("mongodb://localhost/registration_numbers");
+mongoose.connect(process.env.MONGO_DB_URL || "mongodb://localhost/registration_numbers");
 var SavedRegNumbers = mongoose.model("SavedRegNumbers", {regNum: String, counter: Number});
 
 //configure port env
